@@ -160,7 +160,7 @@ class ModelScopeChat(Base):
 
 
 class DeepSeekChat(Base):
-    def __init__(self, key, model_name="deepseek-chat", base_url="https://localhost:6666/v1"):
+    def __init__(self, key=None, model_name="deepseek-chat", base_url="https://localhost:6666/v1"):
         if not base_url:
             base_url = "https://localhost:6666/v1"
         super().__init__(key, model_name, base_url)
